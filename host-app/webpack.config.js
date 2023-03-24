@@ -43,7 +43,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "host_app",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        navbar: "navbar_app@http://localhost:3001/remoteEntry.js"
+      },
       exposes: {},
       shared: {
         ...deps,

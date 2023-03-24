@@ -1,14 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import "./index.css";
+import Navbar from 'navbar/Navbar';
 
 const App = () => (
-  <div className="container">
-    <div>Name: host-app</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
+  <div>
+    <Navbar />
+    Host app
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
