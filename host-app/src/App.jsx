@@ -4,7 +4,7 @@ import Navbar from 'navbar/Navbar';
 
 const App = () => (
   <div>
-    <Navbar />
+    <Navbar name="Adrian" />
     Host app
   </div>
 );
