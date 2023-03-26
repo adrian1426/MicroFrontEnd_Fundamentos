@@ -3,13 +3,15 @@ import ReactDOM from "react-dom";
 import Navbar from 'navbar/Navbar';
 import Counter from 'counter/Counter';
 
-const App = () => (
-  <div>
-    <Navbar name="Adrian" />
-    Host app
+import './index.css';
 
-    <hr />
-    <Counter />
-  </div>
+const App = () => (
+  <>
+    <Navbar name="Adrian" />
+    <div className="container">
+      <h2>Host App</h2>
+      <Counter />
+    </div>
+  </>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
